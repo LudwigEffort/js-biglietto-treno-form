@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="css/style.css">
+
     <script src="js/script.js" defer></script>
 
 </head>
@@ -15,35 +17,68 @@
 
     <section>
 
-        <div>
-            <input type="text" name="nameUser" id="">
+        <div class="container">
+            
+            <div>
+                <h4>Customer Name and Last name</h4>
+                <input type="text" name="nameUser" id="">
+            </div>
+    
+            <div>
+                <h4>Distance (in km)</h4>
+                <input type="number" name="distance" id="distanceKM">
+            </div>
+    
+            <div>
+                <h4>Age</h4>
+                <select name="ageUSER" id="ageUser">
+                    <option value="">Chose your age</option>
+                    <option value="under18" id="ageUnder18">Under 18</option>
+                    <option value="adult" id="ageAdult">Adult</option>
+                    <option value="over65" id="ageOver65">Over 65</option>
+                </select>
+            </div>
+
         </div>
 
         <div>
-            <input type="number" name="distance" id="distanceKM">
-        </div>
 
-        <div>
-            <select name="ageUSER" id="ageUser">
-                <option value="">Chose your age</option>
-                <option value="under18" id="ageUnder18">Under 18</option>
-                <option value="adult" id="ageAdult">Adult</option>
-                <option value="over65" id="ageOver65">Over 65</option>
-            </select>
+            <button type="button" id="btnTiket">Make Tiket</button> 
         </div>
-
-        <button type="button" id="btnTiket">Make Tiket</button> 
 
     </section>
 
     <!-- Tiket -->
     <section>
-        <div>
-            Customer name: <span id="customerName"></span>
+        
+        <h2>Customer info</h2>
+
+        <div class="container">
+            
+            <div class="name_container">
+                <h4>Customer Name</h4>
+                <div id="customerName"></div>
+            </div>
+                
+            <div>
+                <h4>Offer</h4>
+            </div>
+    
+            <div>
+                <h4>Train Carriage</h4>
+            </div>
+    
+            <div>
+                <h4>CP Number</h4>
+            </div>
+    
+            <div>
+                <h4>Tiket Price</h4>
+                <div id="tiketPrice"></div>
+            </div>
+
         </div>
-        <div>
-            Tiket price:<span id="tiketPrice"></span>
-        </div>
+
     </section>
 
 </body>
