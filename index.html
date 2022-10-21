@@ -14,10 +14,10 @@
 
 <body>
     
+    <h1>Price tiket calculator</h1>
+    <section class="border-rad">
 
-    <section>
-
-        <div class="container">
+        <div class="container input space">
             
             <div>
                 <h4>Customer Name and Last name</h4>
@@ -41,42 +41,49 @@
 
         </div>
 
-        <div>
-
+        <div class="container btn-container space">
             <button type="button" id="btnTiket">Make Tiket</button> 
+            <button type="button" id="btnCancel">Cancel</button> 
         </div>
 
     </section>
 
     <!-- Tiket -->
+    <h1>Your Tiket</h1>
     <section>
-        
-        <h2>Customer info</h2>
 
-        <div class="container">
-            
-            <div class="name_container">
-                <h4>Customer Name</h4>
-                <div id="customerName"></div>
-            </div>
+        <div>
+
+            <div class="container space tiket_container">
                 
-            <div>
-                <h4>Offer</h4>
-            </div>
+                <h2>Customer Info</h2>
+                
+                <div class="grey">
+                    <h4>Customer Name</h4>
+                    <div id="customerName"></div>
+                </div>
+                    
+                <div>
+                    <h4>Offer</h4>
+                    <div id="offerType"></div>
+                </div>
+        
+                <div class="grey">
+                    <h4>Train Carriage</h4>
+                    <div id="carriageNumber"></div>
+                </div>
+        
+                <div>
+                    <h4>CP Number</h4>
+                    <div id="cpNumber"></div>
+                </div>
+        
+                <div class="grey">
+                    <h4>Tiket Price</h4>
+                    <div id="tiketPrice"></div>
+                </div>
     
-            <div>
-                <h4>Train Carriage</h4>
             </div>
-    
-            <div>
-                <h4>CP Number</h4>
-            </div>
-    
-            <div>
-                <h4>Tiket Price</h4>
-                <div id="tiketPrice"></div>
-            </div>
-
         </div>
 
     </section>

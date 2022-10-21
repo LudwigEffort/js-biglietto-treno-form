@@ -52,14 +52,14 @@ makeTiket.addEventListener('click',
 
         if  (age == ageMin)  {
             // console.log(`il prezzo è: ${priceUnder18.toFixed(2)} €`);
-            document.getElementById('tiketPrice').innerHTML = (`il prezzo è: ${priceUnder18.toFixed(2)} €`);
+            document.getElementById('tiketPrice').innerHTML = (`${priceUnder18.toFixed(2)} €`);
         }
         
         else if (age == ageMax)  {
             // console.log(`il prezzo è: ${priceOver65.toFixed(2)} €`);
-            document.getElementById('tiketPrice').innerHTML = (`il prezzo è: ${priceOver65.toFixed(2)} €`);
+            document.getElementById('tiketPrice').innerHTML = (`${priceOver65.toFixed(2)} €`);
         } else  {
-            document.getElementById('tiketPrice').innerHTML = (`il prezzo è: ${priceTot.toFixed(2)} €`);                                 
+            document.getElementById('tiketPrice').innerHTML = (`${priceTot.toFixed(2)} €`);                                 
         }
         
         // else console.log(`il prezzo è: ${priceTot.toFixed(2)} €`); 
