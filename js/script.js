@@ -27,13 +27,13 @@ else console.log(`il prezzo è: ${priceTot.toFixed(2)} €`);
 */
 
 
-let numberKM = parseInt(document.querySelector('[name=distance]').value);
+let numberKM = parseInt(document.getElementById('distanceKM').value);
 
 const makeTiket = document.getElementById('btnTiket');
 
 makeTiket.addEventListener('click',
 
-    function() {
+    function () {
         document.getElementById('tiketPrice').innerHTML = `${numberKM}`;
     }
 
