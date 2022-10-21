@@ -50,16 +50,25 @@ makeTiket.addEventListener('click',
         let priceUnder18 = (priceTot - discountUnder18);
         let priceOver65 = (priceTot - discountOver65);
 
+        let offerUnder18 = 'Under 18 Discount'
+        let offerOver65 = 'Over 65 Discount'
+        let notOffer = 'Nothing Discunt'
+
         if  (age == ageMin)  {
             // console.log(`il prezzo è: ${priceUnder18.toFixed(2)} €`);
             document.getElementById('tiketPrice').innerHTML = (`${priceUnder18.toFixed(2)} €`);
+            document.getElementById('offerType').innerHTML = (offerUnder18);
         }
         
         else if (age == ageMax)  {
             // console.log(`il prezzo è: ${priceOver65.toFixed(2)} €`);
             document.getElementById('tiketPrice').innerHTML = (`${priceOver65.toFixed(2)} €`);
-        } else  {
-            document.getElementById('tiketPrice').innerHTML = (`${priceTot.toFixed(2)} €`);                                 
+            document.getElementById('offerType').innerHTML = (offerOver65);
+        } 
+        
+        else  {
+            document.getElementById('tiketPrice').innerHTML = (`${priceTot.toFixed(2)} €`);  
+            document.getElementById('offerType').innerHTML = (notOffer);                               
         }
         
         // else console.log(`il prezzo è: ${priceTot.toFixed(2)} €`); 
